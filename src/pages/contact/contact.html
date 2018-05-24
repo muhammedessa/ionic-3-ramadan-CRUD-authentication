@@ -1,17 +1,31 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Contact
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+    <ion-navbar>
+      <ion-title>
+        Add
+      </ion-title>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
-</ion-content>
+
+
+      <ion-buttons end>
+          <button ion-button icon-only (click)="logout()">
+            <ion-icon name="ios-log-out"></ion-icon>
+          </button>
+        </ion-buttons>
+
+
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+  
+  
+      <button ion-button block color="danger" (click)="goToAddGiftPage()">اضافة اماكن المعونات </button>
+  <br>  <br>
+      <button ion-button block  color="secondary" (click)="goToAddIftarPage()">اضافة اماكن الافطار الجماعي</button>
+      <br>  <br>
+  
+      <button ion-button block (click)="goToShowGiftPage()">اماكن المعونات </button>
+      <br>  <br>
+      <button ion-button block (click)="goToShowIftarPage()">اماكن الافطار الجماعي</button>
+      
+  </ion-content>
